@@ -14,6 +14,6 @@ jobs:
           aws-region: ap-south-1
       - name: code static to s3
         run: |
-          aws s3 sync ./ s3://vcube-static-demo/ \
+          aws s3 sync ./ s3://staticbucket-demo1/ \
           --exclude "*" \
           --include "index.html"
